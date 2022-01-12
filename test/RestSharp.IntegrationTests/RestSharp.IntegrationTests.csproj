@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\RestSharp.Serializers.Xml\RestSharp.Serializers.Xml.csproj" />
+        <ProjectReference Include="..\..\src\RestSharp\RestSharp.csproj" />
+        <ProjectReference Include="..\RestSharp.Tests.Shared\RestSharp.Tests.Shared.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="Assets\Koala.jpg" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Assets\TestFile.txt" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="HttpTracer" Version="2.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.1" />
+        <PackageReference Include="Xunit.Extensions.Logging" Version="1.1.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>
